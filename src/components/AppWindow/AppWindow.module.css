@@ -1,0 +1,7 @@
+.app__inner-wrapper {
+    display: grid;
+    grid-template-columns: 360px 664px;
+    grid-template-rows: min-content 1fr;
+    gap: 24px;
+    margin: 0 12.8vw 0 14.4vw;
+}

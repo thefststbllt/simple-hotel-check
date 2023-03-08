@@ -1,0 +1,68 @@
+.sortings {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 32px 0;
+}
+
+.sortings li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.sortings__button {
+    font-size: 0.875rem;
+    line-height: 1.4em;
+    color: #41522e;
+    background-color: #ffffff;
+    border: 1px solid #41522e;
+    border-radius: 4px;
+    padding: 3px 29px 3px 7px;
+    position: relative;
+    cursor: pointer;
+}
+
+.sortings__button::before,
+.sortings__button::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    border-top: 1.5px solid rgba(65, 82, 46, 0.3);
+    border-right: 1.5px solid rgba(65, 82, 46, 0.3);
+    position: absolute;
+    right: 12px;
+}
+
+.sortings__button::before {
+    top: calc(50% - 5px);
+    transform: rotate(-45deg);
+}
+
+.sortings__button::after {
+    transform: rotate(135deg);
+    bottom: calc(50% - 5px);
+}
+
+.sortings__button--to-small::after {
+    /*border-color: rgba(65, 82, 46, 0.3);*/
+    border-top: 1.5px solid #41522e;
+    border-right: 1.5px solid #41522e;
+}
+
+.sortings__button--to-big::before {
+    /*border-color: rgba(65, 82, 46, 0.3);*/
+    border-top: 1.5px solid #41522e;
+    border-right: 1.5px solid #41522e;
+}
+
+.sortings__button:disabled {
+    color: #99a0a3;
+    border-color: #e5e5e5;
+    cursor: default;
+}
+
+.sortings button:disabled::before,
+.sortings button:disabled::after {
+    border-color: rgba(0, 0, 0, 0.32);
+}

@@ -1,0 +1,13 @@
+.rating {
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.rating li {
+    list-style: none;
+}
+
+.rating li:not(:last-child) {
+    margin-right: 3px;
+}

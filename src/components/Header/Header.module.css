@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 64px);
+    padding: 32px;
+}
+
+.header h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.header__sign-out {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #41522e;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__sign-out svg {
+    margin-left: 12px;
+}

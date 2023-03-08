@@ -1,0 +1,96 @@
+.wrapper-entry-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/src/assets/background/background-entry.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #cc8a47;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+.wrapper-entry-form::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.entry-form {
+    z-index: 1;
+    width: 345px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 33px rgba(0, 0, 0, 0.04);
+}
+
+.entry-form__title {
+    font-size: 24px;
+    line-height: 1.17em;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.entry-form label {
+    font-size: 16px;
+    line-height: 1.19em;
+    font-weight: 300;
+    text-align: start;
+    align-self: start;
+    width: 100%;
+}
+
+.field--invalid {
+    position: relative;
+}
+
+.field--invalid,
+.field--invalid input {
+    color: #eb1717;
+}
+
+.field--invalid::after {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.16em;
+    color: #eb1717;
+    content: attr(data-invalid);
+    display: inline-block;
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+}
+
+.entry-form input {
+    font-size: 16px;
+    line-height: 1.19em;
+    padding: 0 10px;
+    width: calc(100% - 22px);
+    height: 48px;
+    margin: 7px 0 24px;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+}
+
+.entry-form input:last-of-type {
+    margin: 5px 0 30px;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .wrapper-entry-form {
+        background-image: url("/src/assets/background/background-entry@2x.png");
+    }
+}

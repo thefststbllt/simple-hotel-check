@@ -1,0 +1,56 @@
+.search-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 33px rgba(0, 0, 0, 0.04);
+}
+
+.search-form label {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.19em;
+    align-self: start;
+    margin-bottom: 7px;
+}
+
+.search-form input {
+    color: #424242;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.25em;
+    border: 1px solid #c9cacc;
+    border-radius: 4px;
+    padding: 14px;
+}
+
+.search-form input::placeholder {
+    color: #424242;
+}
+
+.search-form input:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.search-form input:last-of-type {
+    margin-bottom: 32px;
+}
+
+.search-form input[type="date"]::-webkit-inner-spin-button,
+.search-form input[type="date"]::-webkit-clear-button {
+    display: block;
+}
+
+.search-form input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    cursor: pointer;
+}
+
+.search-form input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    background-image: url("/src/assets/icons/icon-calendar.svg");
+    background-position: center;
+    background-size: 24px 24px;
+}

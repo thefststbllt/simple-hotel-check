@@ -1,0 +1,36 @@
+.found-hotels {
+    padding: 8px 16px 0 0;
+    margin: 0;
+    max-height: 521px;
+    overflow-y: scroll;
+}
+
+.found-hotels::-webkit-scrollbar {
+    width: 2px;
+}
+
+.found-hotels::-webkit-scrollbar-track {
+    width: 2px;
+    background: #E7E7E7;
+    border-radius: 2px;
+}
+
+.found-hotels::-webkit-scrollbar-thumb {
+    background-color: #41522e;
+    border-radius: 2px;
+}
+
+.found-hotels__favorites-added {
+    font-weight: 300;
+    font-size: 1.06rem;
+    line-height: 1.29em;
+    align-self: start;
+    margin-bottom: 12px;
+    letter-spacing: -0.41px;
+}
+
+.found-hotels__favorites-value {
+    color: #41522e;
+    font-weight: 500;
+    margin: 0 0 0 7px;
+}

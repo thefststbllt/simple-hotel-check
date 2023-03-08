@@ -1,0 +1,20 @@
+.favorites-list {
+    margin: 0;
+    max-height: 288px;
+    height: 288px;
+    overflow: scroll;
+    transition: 0.3s all;
+}
+
+.favorites-list:hover {
+    box-shadow: inset 0 -15px 15px -20px #d3d3d3;
+    transition: 0.3s all;
+}
+
+.favorites-list::-webkit-scrollbar {
+    display: none;
+}
+
+.favorites-list__no-item-plugin {
+    margin: 100px 0;
+}
