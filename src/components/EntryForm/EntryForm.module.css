@@ -89,6 +89,12 @@
     margin: 5px 0 30px;
 }
 
+@media (max-width: 410px) {
+    .entry-form {
+        width: calc(85vw - 35px);
+    }
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .wrapper-entry-form {
         background-image: url("/src/assets/background/background-entry@2x.png");

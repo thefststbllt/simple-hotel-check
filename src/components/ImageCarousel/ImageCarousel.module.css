@@ -3,8 +3,12 @@
     column-gap: 12px;
     padding: 28px 0;
     margin: 0;
-    overflow-y: scroll;
+    overflow-x: scroll;
     list-style: none;
+}
+
+.image-carousel::-webkit-scrollbar  {
+    display: none;
 }
 
 .image-carousel li {

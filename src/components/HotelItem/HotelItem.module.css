@@ -48,7 +48,7 @@
     line-height: 1.29em;
     text-align: start;
     margin: 12px 0 0;
-    max-width: calc(100% - 21px);
+    max-width: calc(100% - 35px);
     grid-column: 2/-1;
 }
 

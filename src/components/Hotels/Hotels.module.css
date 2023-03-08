@@ -24,8 +24,8 @@
 }
 
 .hotels__breadcrumbs li {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 1.19em;
     font-weight: 500;
     list-style: none;
     display: block;
@@ -60,7 +60,27 @@
 
 .hotels__date {
     color: #41522E;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.17em;
     margin-top: 4px;
+}
+
+@media (max-width: 1072px) {
+    .hotels {
+        grid-area: auto;
+    }
+
+    .hotels__breadcrumbs {
+        flex-wrap: wrap;
+    }
+
+    .hotels__breadcrumbs li {
+        font-size: 1.5rem;
+        line-height: 1.19em;
+    }
+
+    .hotels__date {
+        width: max-content;
+        word-break: keep-all;
+    }
 }
