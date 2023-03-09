@@ -38,6 +38,11 @@
     margin-bottom: 32px;
 }
 
+.search-form input[type="date"] {
+    background-color: #ffffff;
+    width: calc(100% - 30px);
+}
+
 .search-form input[type="date"]::-webkit-inner-spin-button,
 .search-form input[type="date"]::-webkit-clear-button {
     display: block;

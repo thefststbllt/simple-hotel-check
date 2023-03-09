@@ -70,6 +70,7 @@ const EntryForm = (props) => {
                         onChange={emailChangeHandler}
                         onBlur={checkEmailBlur}
                         id='entry-login'
+                        type='email'
                     />
                 </label>
                 <label

@@ -84,3 +84,29 @@
         word-break: keep-all;
     }
 }
+
+@media (max-width: 767px) {
+    .hotels__breadcrumbs li,
+    .hotels__date {
+        font-size: 4vw;
+    }
+
+    .hotels__breadcrumbs li:not(:last-child)::before,
+    .hotels__breadcrumbs li:not(:last-child)::after {
+        width: 1.8vw;
+        height: 0.3vw;
+        right: -4.2vw;
+    }
+
+    .hotels__breadcrumbs li:not(:last-child) {
+        margin-right: 6.5vw;
+    }
+
+    .hotels__breadcrumbs li:not(:last-child)::before {
+        top: calc(50% - 0.6vw);
+    }
+
+    .hotels__breadcrumbs li:not(:last-child)::after {
+        bottom: calc(50% - 0.8vw);
+    }
+}

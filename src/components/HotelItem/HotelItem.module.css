@@ -173,3 +173,13 @@
     fill: #e55858;
     stroke: transparent;
 }
+
+@media (max-width: 1072px) {
+    .hotel-item::before {
+        width: 7vw;
+        height: 7vw;
+        background-size: 3vw 3vw;
+        margin: 0 10px 0 0;
+        align-self: center;
+    }
+}
